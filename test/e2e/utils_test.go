@@ -34,6 +34,12 @@ const (
 
 	shortDrainRequestQueue = "short-drain-request-sortedset"
 	shortDrainResultQueue  = "short-drain-result-list"
+
+	benchmarkRequestQueue = "benchmark-request-sortedset"
+	benchmarkResultQueue  = "benchmark-result-list"
+
+	benchmarkPoolGateRequestQueue = "benchmark-pool-gate-request-sortedset"
+	benchmarkPoolGateResultQueue  = "benchmark-pool-gate-result-list"
 )
 
 var httpClient = &http.Client{Timeout: 10 * time.Second}
